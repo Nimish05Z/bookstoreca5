@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: #0a0a0a; /* Light gray background */
+  background-image: url(background.webp);
+}
+
+.book-list-container {
+  margin: 0 auto;
+  overflow-x: hidden;
+  padding: 20px; /* Add padding for content */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #2f373f78; /* Dark blue background */
+  color: #ecf0f1; /* Light text color */
+  padding: 10px 20px;
+  border-radius: 14px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #bb1125; /* Blue header text color */
+}
+
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  flex-wrap: wrap;
+}
+
+.search-input {
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  border: 2px solid #bb1125; /* Blue border color */
+  border-radius: 15px;
+}
+
+.register-button {
+  background-color: #bb1125; /* Blue button background color */
+  padding: 10px;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+.register-button:hover {
+  background-color: #777979; /* Darker blue on hover */
+}
+
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 60px;
+  max-width: 80vw; /* Increase the max width */
+  margin: 20px auto;
+}
+
+.book-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #fefcfc; /* White card background */
+  border-radius: 20px;
+  border: 2px solid red;
+  transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+  transform: scale(1.1);
+  background-color: #9a9c9cbe;
+}
+
+.book-thumbnail {
+  max-height: 100%;
+}
+
+.book-details {
+  margin-top: 15px;
+}
+
+.book-title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #333; /* Dark text color */
+}
+
+.book-authors {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #555; /* Medium text color */
+}
+
+.book-rating {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #27ae60; /* Green rating color */
+}
+
+#logo {
+  height: 50px; /* Adjust the logo size */
+  width: 50px;
+}
